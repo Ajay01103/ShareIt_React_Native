@@ -35,7 +35,7 @@ local.properties
 !debug.keystore
 
 # certificates
-tls_certificates
+# tls_certificates
 
 # node.js
 #
