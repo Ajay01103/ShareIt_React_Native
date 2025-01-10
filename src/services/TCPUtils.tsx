@@ -2,13 +2,8 @@ import { produce } from "immer"
 import { Alert } from "react-native"
 import { useChunkStore } from "../db/chunkStore"
 import { Buffer } from "buffer"
-import { buffer } from "stream/consumers"
 
-export const receiveFileAck = async (
-  data: any,
-  socket: any,
-  setReceivedFiles: any
-) => {
+export const receiveFileAck = async (data: any, socket: any, setReceivedFiles: any) => {
   const { setChunkStore, chunkStore } = useChunkStore.getState()
 
   if (chunkStore) {
@@ -16,11 +11,11 @@ export const receiveFileAck = async (
     return
   }
 
-  setReceivedFiles((prevData: any) => {
+  setReceivedFiles((prevData: any) =>
     produce(prevData, (draft: any) => {
       draft.push(data)
     })
-  })
+  )
 
   setChunkStore({
     id: data?.id,
@@ -76,23 +71,19 @@ export const sendChunkAck = async (
       })
     )
 
-    setTotalSentBytes(
-      (prev: number) => prev + currentChunkSet.chunkArray[chunkIndex]?.length
-    )
+    setTotalSentBytes((prev: number) => prev + currentChunkSet.chunkArray[chunkIndex]?.length)
 
     if (chunkIndex + 2 > totalChunks) {
       console.log("ALL CHUNKS SENT SUCCESSFULLY ✅")
-      setSentFiles((prevFiles: any) => {
+      setSentFiles((prevFiles: any) =>
         produce(prevFiles, (draftFiles: any) => {
-          const fileIndex = draftFiles?.findIndex(
-            (f: any) => f.id === currentChunkSet.id
-          )
+          const fileIndex = draftFiles?.findIndex((f: any) => f.id === currentChunkSet.id)
 
           if (fileIndex !== -1) {
             draftFiles[fileIndex].available = true
           }
         })
-      })
+      )
 
       resetCurrentChunkSet()
     }

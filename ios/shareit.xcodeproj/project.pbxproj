@@ -14,11 +14,11 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-shareit-shareitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-shareit-shareitTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		D273AF8C6E064D41AE1D1D1A /* Okra-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF9EDA7EC1BC46C38A1C8ABC /* Okra-Bold.ttf */; };
-		978F9B764A3642B387FAF48C /* Okra-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A005D05841BB485594175619 /* Okra-ExtraBold.ttf */; };
-		2772FF2A0C094E29A0999239 /* Okra-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA202BF9BC184FB4AB4EE7C1 /* Okra-Medium.ttf */; };
-		2CAAF1F9CF7C403E93B14076 /* Okra-MediumLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C118EE2C32894E0782874BEC /* Okra-MediumLight.ttf */; };
-		AF34951F5B18488C868BF003 /* Okra-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37B5B01CF44546FBA6B9B220 /* Okra-Regular.ttf */; };
+		5C44E95F8449466EB2B54E14 /* Okra-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22147BDF4A604ABD8B0E1FBA /* Okra-Bold.ttf */; };
+		35A7F37F7CE746A5B8B96D85 /* Okra-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65DB5BD88D9841F295EADC77 /* Okra-ExtraBold.ttf */; };
+		F4316445C648456CA25C9382 /* Okra-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA65701A9CF94D66AECF22FF /* Okra-Medium.ttf */; };
+		D710CAA3FB7F479B9430DA1B /* Okra-MediumLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B26C60289574E208DE03D12 /* Okra-MediumLight.ttf */; };
+		D9452DEA2D10451987BB0839 /* Okra-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6A2EBAE0633494C8177E633 /* Okra-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,11 +50,11 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = shareit/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-shareit-shareitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shareit-shareitTests.release.xcconfig"; path = "Target Support Files/Pods-shareit-shareitTests/Pods-shareit-shareitTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		DF9EDA7EC1BC46C38A1C8ABC /* Okra-Bold.ttf */ = {isa = PBXFileReference; name = "Okra-Bold.ttf"; path = "../src/assets/fonts/Okra-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A005D05841BB485594175619 /* Okra-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Okra-ExtraBold.ttf"; path = "../src/assets/fonts/Okra-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AA202BF9BC184FB4AB4EE7C1 /* Okra-Medium.ttf */ = {isa = PBXFileReference; name = "Okra-Medium.ttf"; path = "../src/assets/fonts/Okra-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C118EE2C32894E0782874BEC /* Okra-MediumLight.ttf */ = {isa = PBXFileReference; name = "Okra-MediumLight.ttf"; path = "../src/assets/fonts/Okra-MediumLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		37B5B01CF44546FBA6B9B220 /* Okra-Regular.ttf */ = {isa = PBXFileReference; name = "Okra-Regular.ttf"; path = "../src/assets/fonts/Okra-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		22147BDF4A604ABD8B0E1FBA /* Okra-Bold.ttf */ = {isa = PBXFileReference; name = "Okra-Bold.ttf"; path = "../src/assets/fonts/Okra-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		65DB5BD88D9841F295EADC77 /* Okra-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Okra-ExtraBold.ttf"; path = "../src/assets/fonts/Okra-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DA65701A9CF94D66AECF22FF /* Okra-Medium.ttf */ = {isa = PBXFileReference; name = "Okra-Medium.ttf"; path = "../src/assets/fonts/Okra-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8B26C60289574E208DE03D12 /* Okra-MediumLight.ttf */ = {isa = PBXFileReference; name = "Okra-MediumLight.ttf"; path = "../src/assets/fonts/Okra-MediumLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C6A2EBAE0633494C8177E633 /* Okra-Regular.ttf */ = {isa = PBXFileReference; name = "Okra-Regular.ttf"; path = "../src/assets/fonts/Okra-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +134,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				6739218B0C66408C99CE652F /* Resources */,
+				7515957BF9E74A5E87182BDB /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -161,14 +161,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		6739218B0C66408C99CE652F /* Resources */ = {
+		7515957BF9E74A5E87182BDB /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				DF9EDA7EC1BC46C38A1C8ABC /* Okra-Bold.ttf */,
-				A005D05841BB485594175619 /* Okra-ExtraBold.ttf */,
-				AA202BF9BC184FB4AB4EE7C1 /* Okra-Medium.ttf */,
-				C118EE2C32894E0782874BEC /* Okra-MediumLight.ttf */,
-				37B5B01CF44546FBA6B9B220 /* Okra-Regular.ttf */,
+				22147BDF4A604ABD8B0E1FBA /* Okra-Bold.ttf */,
+				65DB5BD88D9841F295EADC77 /* Okra-ExtraBold.ttf */,
+				DA65701A9CF94D66AECF22FF /* Okra-Medium.ttf */,
+				8B26C60289574E208DE03D12 /* Okra-MediumLight.ttf */,
+				C6A2EBAE0633494C8177E633 /* Okra-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -269,11 +269,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				D273AF8C6E064D41AE1D1D1A /* Okra-Bold.ttf in Resources */,
-				978F9B764A3642B387FAF48C /* Okra-ExtraBold.ttf in Resources */,
-				2772FF2A0C094E29A0999239 /* Okra-Medium.ttf in Resources */,
-				2CAAF1F9CF7C403E93B14076 /* Okra-MediumLight.ttf in Resources */,
-				AF34951F5B18488C868BF003 /* Okra-Regular.ttf in Resources */,
+				5C44E95F8449466EB2B54E14 /* Okra-Bold.ttf in Resources */,
+				35A7F37F7CE746A5B8B96D85 /* Okra-ExtraBold.ttf in Resources */,
+				F4316445C648456CA25C9382 /* Okra-Medium.ttf in Resources */,
+				D710CAA3FB7F479B9430DA1B /* Okra-MediumLight.ttf in Resources */,
+				D9452DEA2D10451987BB0839 /* Okra-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +449,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = shareitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,7 +473,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = shareitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +499,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = shareit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,7 +525,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = shareit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,7 +591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -659,7 +657,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",

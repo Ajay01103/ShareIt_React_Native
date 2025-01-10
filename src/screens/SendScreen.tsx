@@ -20,7 +20,7 @@ import { Colors, screenWidth } from "../utils/Constants"
 import LottieView from "lottie-react-native"
 import QRScannerModal from "../components/modals/QRScannerModal"
 
-const deviceNames = ["Samsung M35", "S23 Ultra", "Pixel 12", "One Plus 11"]
+const deviceNames = ["Samsung M35", "S23 Ultra", "Pixel 12"]
 
 const SendScreen: FC = () => {
   const { connectToServer, isConnected } = useTCP()
@@ -45,14 +45,9 @@ const SendScreen: FC = () => {
     })
 
     server.on("message", (msg, rinfo) => {
-      const [connectionData, otherDevice] = msg
-        ?.toString()
-        ?.replace("tcp://", "")
-        .split("|")
+      const [connectionData, otherDevice] = msg?.toString()?.replace("tcp://", "").split("|")
       setNearbyDevices((prevDevices) => {
-        const deviceExists = prevDevices?.some(
-          (device) => device?.name === otherDevice
-        )
+        const deviceExists = prevDevices?.some((device) => device?.name === otherDevice)
 
         if (!deviceExists) {
           const newDevice = {
@@ -137,36 +132,36 @@ const SendScreen: FC = () => {
     return position
   }
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     if (nearbyDevices.length < deviceNames.length) {
-  //       const newDevice = {
-  //         id: `${nearbyDevices.length + 1}`,
-  //         name: deviceNames[nearbyDevices.length],
-  //         image: require("../assets/icons/device.jpeg"),
-  //         position: getRandomePosition(
-  //           150,
-  //           nearbyDevices.map((d) => d.position),
-  //           50
-  //         ),
-  //         scale: new Animated.Value(0),
-  //       }
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (nearbyDevices.length < deviceNames.length) {
+        const newDevice = {
+          id: `${nearbyDevices.length + 1}`,
+          name: deviceNames[nearbyDevices.length],
+          image: require("../assets/icons/device.jpeg"),
+          position: getRandomePosition(
+            150,
+            nearbyDevices.map((d) => d.position),
+            50
+          ),
+          scale: new Animated.Value(0),
+        }
 
-  //       setNearbyDevices((prevDevices) => [...prevDevices, newDevice])
+        setNearbyDevices((prevDevices) => [...prevDevices, newDevice])
 
-  //       Animated.timing(newDevice.scale, {
-  //         toValue: 1,
-  //         duration: 500,
-  //         easing: Easing.out(Easing.ease),
-  //         useNativeDriver: true,
-  //       }).start()
-  //     } else {
-  //       clearInterval(timer)
-  //     }
-  //   }, 2000)
+        Animated.timing(newDevice.scale, {
+          toValue: 1,
+          duration: 500,
+          easing: Easing.out(Easing.ease),
+          useNativeDriver: true,
+        }).start()
+      } else {
+        clearInterval(timer)
+      }
+    }, 2000)
 
-  //   return () => clearInterval(timer)
-  // }, [nearbyDevices])
+    return () => clearInterval(timer)
+  }, [nearbyDevices])
 
   return (
     <LinearGradient
@@ -201,8 +196,7 @@ const SendScreen: FC = () => {
             fontSize={12}
             style={{ textAlign: "center" }}
           >
-            Ensure your device's hotspot is active and the receiver is connected to
-            it
+            Ensure your device's hotspot is active and the receiver is connected to it
           </CustomText>
 
           <BreakerText text="or" />

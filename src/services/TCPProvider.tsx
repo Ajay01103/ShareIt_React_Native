@@ -82,12 +82,7 @@ export const TCPProvider: FC<{ children: React.ReactNode }> = ({ children }) => 
           }
 
           if (parsedData.event === "send_chunk_ack") {
-            sendChunkAck(
-              parsedData?.chunkNo,
-              socket,
-              setTotalSentBytes,
-              setSentFiles
-            )
+            sendChunkAck(parsedData?.chunkNo, socket, setTotalSentBytes, setSentFiles)
           }
 
           if (parsedData.event === "receive_chunk_ack") {
@@ -140,9 +135,7 @@ export const TCPProvider: FC<{ children: React.ReactNode }> = ({ children }) => 
           setIsConnected(true)
           setConnectedDevice(deviceName)
           const myDeviceName = DeviceInfo.getDeviceNameSync()
-          newClient.write(
-            JSON.stringify({ event: "connect", deviceName: myDeviceName })
-          )
+          newClient.write(JSON.stringify({ event: "connect", deviceName: myDeviceName }))
         }
       )
 
@@ -158,12 +151,7 @@ export const TCPProvider: FC<{ children: React.ReactNode }> = ({ children }) => 
         }
 
         if (parsedData?.event === "send_chunk_ack") {
-          sendChunkAck(
-            parsedData?.chunkNo,
-            newClient,
-            setTotalSentBytes,
-            setSentFiles
-          )
+          sendChunkAck(parsedData?.chunkNo, newClient, setTotalSentBytes, setSentFiles)
         }
 
         if (parsedData?.event === "receive_chunk_ack") {
@@ -238,8 +226,7 @@ export const TCPProvider: FC<{ children: React.ReactNode }> = ({ children }) => 
       return
     }
 
-    const normalizePath =
-      Platform.OS === "ios" ? file?.uri?.replace("file://", "") : file?.uri
+    const normalizePath = Platform.OS === "ios" ? file?.uri?.replace("file://", "") : file?.uri
     const fileData = await RNFS.readFile(normalizePath, "base64")
     const buffer = Buffer.from(fileData, "base64")
     const CHUNK_SIZE = 1024 * 8
@@ -313,7 +300,7 @@ export const TCPProvider: FC<{ children: React.ReactNode }> = ({ children }) => 
       const filePath = `${platformPath}/${chunkStore.name}`
 
       await RNFS.writeFile(filePath, combinedChunks?.toString("base64"), "base64")
-      setReceivedFiles((prevFiles: any) => {
+      setReceivedFiles((prevFiles: any) =>
         produce(prevFiles, (draftFiles: any) => {
           const fileIndex = draftFiles?.findIndex((f: any) => f.id === chunkStore.id)
           if (fileIndex !== -1) {
@@ -324,7 +311,7 @@ export const TCPProvider: FC<{ children: React.ReactNode }> = ({ children }) => 
             }
           }
         })
-      })
+      )
 
       console.log("FILE SAVED SUCCESSFULLY: ", filePath)
       resetChunkStore()
